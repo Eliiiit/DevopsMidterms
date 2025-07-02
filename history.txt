@@ -1,0 +1,317 @@
+    1  sudo bash
+    2  poweroff
+    3  docker run hello-world
+    4  exit
+    5  sudo apt-get update
+    6  sudo apt-get install ca-certificates curl
+    7  sudo install -m 0755 -d /etc/keyrings
+    8  sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+    9  sudo chmod a+r /etc/apt/keyrings/docker.asc
+   10  echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+   11    $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}") stable" |  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   12  sudo apt-get update
+   13  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+   14  sudo usermod -aG docker $USER
+   15  newgrp docker
+   16  docker run hello-world
+   17  ssh devops@192.168.186.128
+   18  docker run hello-world
+   19  docker pull busybox
+   20  docker run hello-world
+   21  docker pull busybox
+   22  $ docker images
+   23  docker images
+   24  ls
+   25  docker run busybox
+   26  docker ps
+   27  docker run busybox echo "hello from busybox"
+   28  docker ps -a
+   29  docker pull busybox
+   30  docker images
+   31  docker ps -a
+   32  docker run busybox
+   33  docker ps
+   34  docker ps -a
+   35  docker run busybox sh "beautiful_babbage"
+   36  docker run busybox /hello
+   37  docker run busybox echo 
+   38  docker ps -a
+   39  docker run busybox sh
+   40  docker run busybox /hello
+   41  docker run -it busybox sh
+   42  docker run hello-world
+   43  docker run busybox
+   44  docker ps -a
+   45  docker ls
+   46  docker --help
+   47  docker rm 1009
+   48  docker ps -a
+   49  docker rm -a
+   50  docker rm --help
+   51  docker ps -a
+   52  docker ps --help
+   53  docker --help
+   54  docker history
+   55  docker container prune
+   56  docker ps -a
+   57  docker run --rm -it prakhar1989/static-site
+   58  docker run -d -P --name static-site prakhar1989/static-site
+   59  docker port static-site
+   60  docker run -P --name static-site prakhar1989/static-site
+   61  docker port static-site
+   62  docker pull ubuntu:18.04
+   63  FROM phython:3.8
+   64  git clone https://github.com/prakhar1989/docker-curriculum.git
+   65  cd docker-curriculum/flask-app
+   66  FROM python:3.8
+   67  WORKDIR /usr/src/app
+   68  ls -l
+   69  cat app.py
+   70  cat requirements.txt
+   71  docker build
+   72  docker build -t catayocj/demo2 .
+   73  ipconfig
+   74  exit
+   75  docker compose watch
+   76  dock compose up
+   77  docker compose up
+   78  cd
+   79  ls
+   80  cd composetest
+   81  docker compose watch
+   82  docker compose --help
+   83  cd ..
+   84  git clone https://github.com/riCODEre/LE2.git
+   85  ls
+   86  docker build
+   87  docker build .
+   88  cd LE2
+   89  ls
+   90  cd hello
+   91  ls
+   92  cat Dockerfile
+   93  nano Dockerfile
+   94  cd
+   95  ls
+   96  cd LE2
+   97  ls
+   98  cd hello
+   99  nano Dockerfile
+  100  nano manage.py
+  101  cd manage.py
+  102  cd
+  103  cd LE2
+  104  ls
+  105  cd
+  106  ls
+  107  cd composetest
+  108  cat app.py
+  109  nano compose.yaml
+  110  cat compose.yaml
+  111  nano infra.yaml
+  112  cat infra.yaml
+  113  nano compose.yaml
+  114  docker compose down
+  115  docker compose up
+  116  docker compose down
+  117  exit
+  118  mysql --version
+  119  sudo apt install mysql-client
+  120  mysql --version
+  121  sudo apt install mysql-client
+  122  mysql --version
+  123  sudo apt install mysql-client-core-8.0
+  124  sudo apt install mysql-client-core
+  125  mysql --version
+  126  sudo apt install mysql-client
+  127  mysql --version
+  128  clear
+  129  cd /etc/apt/sources.list.d/
+  130  sudo nano ubuntu.sources
+  131  cd /etc/apt/sources.list.d/
+  132  sudo nano ubuntu.sources
+  133  sudo apt update
+  134  sudo nano ubuntu.sources
+  135  sudo apt install mysql-client
+  136  mysql -h192.168.186.128 -uroot -pexample
+  137  ip addr
+  138  mysql -h192.168.186.128 -uroot -pexample
+  139  cd LE2
+  140  mkdir start.sh
+  141  ls
+  142  nano start.sh
+  143  git clone https://github.com/riCODEre/LE2.git
+  144  ls
+  145  cd LE2
+  146  ls
+  147  cd hello
+  148  ls
+  149  cd ..
+  150  cd manage.py
+  151  cat Dockerfile
+  152  cd hello
+  153  cat Dockerfile
+  154  bash Dockerfile
+  155  clear
+  156  ls
+  157  nano Dockerfile
+  158  cd ..
+  159  ls
+  160  cd hello
+  161  git pull
+  162  git status
+  163  cat Dockerfile
+  164  git pull --force
+  165  cd ..
+  166  ls
+  167  cd hello
+  168  ls
+  169  cd ..
+  170  ls
+  171  rm -rf LE2
+  172  ls
+  173  git clone https://github.com/riCODEre/LE2.git
+  174  ls
+  175  cd LE2
+  176  ls
+  177  docker compose run --build
+  178  docker compose up --build
+  179  cd ..
+  180  git config
+  181  git username
+  182  git --help
+  183  ls
+  184  cd LE2
+  185  ls
+  186  cat Dockerfile
+  187  cat compose.yaml
+  188  nano compose.yaml
+  189  cat compose
+  190  cat compose.yaml
+  191  git pull
+  192  docker compose run --build
+  193  docker pull
+  194  nano compose.yaml
+  195  cat compose.yaml
+  196  ls
+  197  cd hello
+  198  ls
+  199  cd migrations
+  200  ls
+  201  cd ..
+  202  cd apps.py
+  203  cd ..
+  204  ls
+  205  cd Dockerfile
+  206  cd DjangoTest
+  207  ls
+  208  nano settings.py
+  209  cd ..
+  210  docker compose up
+  211  ls
+  212  cat compose.yaml
+  213  nano compose.yaml
+  214  docker compose up
+  215  ls
+  216  cd DjangoTest
+  217  ls
+  218  nano settings.py
+  219  cd ..
+  220  docker compose up
+  221  cd DjangoTest
+  222  nano settings.py
+  223  cd ..
+  224  docker compose up
+  225  git add .
+  226  git status
+  227  git commit -m "Edit settings.py"
+  228  git config --global user.email "jeremiaheli.lucas@benilde.edu.ph"
+  229  git config --global user.name "Name"
+  230  git commit -m "Edit settings.py"
+  231  git push
+  232  git commit -m "Edit settings.py"
+  233  git push
+  234  git commit -m "Edit settings.py"
+  235  git push
+  236  docker compose up
+  237  ls
+  238  cd Dockerfile
+  239  nano Dockerfile
+  240  docker compose up --build
+  241  nano Dockerfile
+  242  docker compose up --build
+  243  nano Dockerfile
+  244  docker compose up --build
+  245  nano Dockerfile
+  246  sudo apt install pkg-config
+  247  docker compose up --build
+  248  sudo apt-get update
+  249  docker compose up --build
+  250  nano Dockerfile
+  251  docker compose up --build
+  252  nano Dockerfile
+  253  git push
+  254  git push --force
+  255  nano compose.yaml
+  256  docker compose up --build
+  257  nano compose.yaml
+  258  docker compose up --build
+  259  git add .
+  260  git status
+  261  git commit -m "changes in dockerfile and compose"
+  262  git push
+  263  docker compose up --build
+  264  nano Dockerfile
+  265  exit
+  266  ls
+  267  mkdir myapp
+  268  cd myapp
+  269  git init
+  270  nano .gitignore
+  271  git add .
+  272  git commit -m "Initial project structure"
+  273  git checkout -b feature/django-app
+  274  sudo apt install python3-django
+  275  django-admin startproject webapp .
+  276  cd webapp
+  277  nano urls.py
+  278  git add .
+  279  git commit -m "Add basic Django project"
+  280  git checkout main
+  281  git checkout master
+  282  git merge feature/django-app
+  283  git tag v1.0
+  284  cd ..
+  285  nano Dockerfile
+  286  nano requirements.txt
+  287  ls
+  288  cd webapp
+  289  ls
+  290  cd ..
+  291  echo "Django" > requirements.txt
+  292  docker build -t myapp:v1
+  293  docker build -t myapp:v1 .
+  294  docker run up
+  295  docker run -p 8000:8000 myapp:v1
+  296  cd webapp
+  297  ls
+  298  nano settings.py
+  299  docker build -t myapp:v1 .
+  300  cd ..
+  301  docker build -t myapp:v1
+  302  docker build -t myapp:v1 .
+  303  docker run -p 8000:8000 myapp:v1
+  304  nano docker-compose.yml
+  305  docker compose-up
+  306  ls
+  307  docker-compose up
+  308  sudo apt install docker-compose
+  309  ls
+  310  cd webapp
+  311  ls
+  312  cd ..
+  313  docker-compose up
+  314  ls
+  315  docker-compose up
+  316  docker-compose up --build
+  317  history > history.txt

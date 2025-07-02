@@ -1,0 +1,11 @@
+  269  git init
+  270  nano .gitignore
+  271  git add .
+  272  git commit -m "Initial project structure"
+  273  git checkout -b feature/django-app
+  278  git add .
+  279  git commit -m "Add basic Django project"
+  280  git checkout main
+  281  git checkout master
+  282  git merge feature/django-app
+  283  git tag v1.0
